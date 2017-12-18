@@ -1,0 +1,712 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/*@import "import-styles.css";*/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+    Web Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Abolition Regular';
+    src: url('../fonts/abolition-regular-webfont.eot');
+    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/abolition-regular-webfont.woff') format('woff'),
+    url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+
+}
+
+/* ==========================================================================
+    Selectors
+   ========================================================================== */
+* {
+    box-sizing: border-box;            /* Forces width to be fixed and padding to adapt */
+}
+
+body {
+    color: #878787;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-size: 1em;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: normal;
+     line-height: 1.5; */
+    /*border: solid red 3px;*/
+}
+
+ol li{
+    color: black;
+    /*border: solid red 3px;*/
+}
+
+h1,
+h2{
+    font-family: "Abolition Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-header h1 {
+    font-size: 5.625rem;                /* 90px/16px */
+    color: rgba(255, 255, 255, .9);     /* RGBA changes transparency */
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    text-shadow: 0 1px 0 #ccc,          /* 3D text shadow effect*/
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+    margin-top: 12px;
+    /*text-shadow: -5px 8px 10px #000;*/
+    /*border: solid red 3px;*/
+}
+
+h2 {
+    font-size: 3.3125em;
+    text-decoration: underline;
+    font-weight: normal;
+    margin-bottom: .5em;               /* 26px */
+    /*border: solid red 3px;*/
+}
+
+h3 {
+    font-size: 1.25em;
+    color: #48525c;
+    /*border: solid red 3px;*/
+    /*margin-bottom: 1.7em;               !* 34px *!*/
+}
+
+img {
+    max-width: 100%;                    /* This causes images to scale with window */
+    margin-bottom: 20px;
+}
+
+figcaption {
+    color: rgba(255, 255, 255, .8);
+}
+
+li {
+    padding: 10px 12px 10px 12px;
+    border-right: solid 1px;
+}
+
+pre {
+    /*border: solid red 3px;*/
+}
+
+p {
+    /*border: solid red 3px;*/
+}
+
+blockquote {
+    /*border: solid red 3px;*/
+}
+
+footer {
+    /*border: solid red 3px;*/
+}
+
+/* ==========================================================================
+   Link Selectors
+   ========================================================================== */
+
+a:link {
+    color: steelblue;             /* 255 = white, 0 = black*/
+    text-decoration: none;
+    /*border: solid red 3px;*/
+}
+
+.menu a:link {
+    color: white;
+
+}
+
+.main-header li{
+    display: inline-block;
+}
+
+.secondary-content a:link {
+    color: steelblue;
+    margin: 10px;
+    max-width: 900px;
+}
+
+.secondary-content a:visited {
+    color: purple;
+}
+
+a:visited {
+    color: darkblue;
+    /*border: solid red 3px;*/
+}
+
+a:hover {
+    color: rgba(255, 15, 73, .4);        /* RGBA changes transparency */
+    /*border: solid red 3px;*/
+}
+
+ a:active{
+     color: lightcoral;
+     /*border: solid red 3px;*/
+ }
+
+ :focus {
+     color: white;
+     background-color: orange;
+ }
+
+/* ==========================================================================
+    Class Selectors
+   ========================================================================== */
+.main-header {
+    text-align: center;
+    height: 650px;
+    padding-top: 50px;
+    background: linear-gradient(steelblue, transparent 90%),                /* multiple gradients w/ overlay */
+                linear-gradient(0deg, gray, transparent 20%),
+                #FFA949 url('../img/morning-grass-hd-wallpaper.jpg') no-repeat center / cover;
+    box-shadow: 0 15px 20px -5px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    /*background-color: #FFA949;*/
+    /*border: solid red 3px;*/
+    /*background-image: ;                                                  !* Set background image *!*/
+    /*background-size: cover;                                              !* Set bg image size *!*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center; */
+
+}
+
+.profile-image {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, .6) 3px;
+    /*border: solid red 3px;*/
+}
+
+.secondary-content {
+    color: white;
+    background: #434a52 url("../img/Rocket.jpeg");
+    background-size: cover;
+    padding: 18%;
+    border-top: solid 10px #FFA949;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 15px 20px -5px rgba(0, 0, 0, .8);      /* 4th value spreads shadow further */
+    /*box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 8) This creates an inset outer shadow*/
+    /*border-top-left-radius: 50%;*/
+    /*border-top-right-radius: 10%;*/
+    /*border-bottom-right-radius: 50px;*/
+    /*border-bottom-left-radius: 10%;*/
+    /*padding: 75px;*/
+}
+
+
+.title {
+    color: white;
+    font-size: 1.625rem;                /* 26px/16px  to get em value of 26px */
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+    letter-spacing: .065em;
+    font-weight: 400;
+    border-bottom: 2px solid #aaaaaa;
+    /*border: solid red 3px;*/
+}
+
+.menu {
+    padding-left: -50px;
+
+}
+
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    /* list-style-position: inside; */
+    /* margin-left: 0; */
+}
+
+.about {
+    height: 400px;
+    text-align: center;
+    color: rgba(255, 255, 255, .7);
+    /*margin: 20px;*/
+    border-radius: 10px 50px;
+    background: dimgrey radial-gradient(circle at top right, #FFA949 0%, firebrick 60%, dodgerblue 120%);
+    box-shadow: 0 15px 20px -5px rgba(0, 0, 0, .8);
+    /*background-image: linear-gradient(90deg, #FFA949, firebrick);        !* gradient is to(direction) or in deg *!*/
+    /* eliptical gradient w/o circle keyword */
+    /*border: solid red 3px;*/
+}
+
+.about h2{
+    padding-top: 20px;
+}
+
+.about p {
+    padding-top: 60px;
+}
+
+.single-article {
+    margin: 10px;
+    max-width: 900px;
+    /*border: solid red 3px;*/
+}
+
+.callout {
+    font-size: 1.25em;
+    border-bottom: 3px solid;
+    padding: 0 9px 3px 9px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.library {
+    width: 500px;  /* this doesn't work for some reason */
+}
+
+.a, .b {
+    width: 46.5%;
+}
+
+.a {
+    float: right;
+}
+
+.b {
+    float: left;
+}
+
+.group:after {
+    content: '';
+    display: table;                 /* Float Clearfix */
+    clear: both;
+}
+
+/* ==========================================================================
+    ID Selectors
+   ========================================================================== */
+
+#Articles h2 {
+    text-align: center;
+}
+
+#main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: solid 10px #FFA949;
+    border-top: #aaaaaa solid 2px;
+    text-align: center;
+    margin-top: 20px;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+/* ==========================================================================
+    Media Queries
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .secondary-content,
+    .about {
+        width: 90%;
+    }
+
+    .secondary-content {
+        padding: 10% 12%;
+        margin: 10px 0 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .secondary-content,
+    .about {
+        width: 100%;
+        padding: 20px;
+        border-top: none;
+    }
+
+    .main-header {
+        max-height: 380px;
+        padding: 50px 25px 0 25px;
+    }
+
+    .profile-image {
+        display: none;
+    }
+
+    .title {
+        font-size: 1.3rem;
+        border: none;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 1.1em;
+    }
+
+    .secondary-content p{
+        font-size: 1rem;
+    }
+
+    .a,
+    .b {
+        float: none;
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    #main-footer {
+        padding: 20px 0 20px 0;
+        margin-left: 0;
+        border-top: #aaaaaa solid 2px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .about p{
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    figcaption {
+        display: none;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .menu li {
+        display: inline;
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+
+/*@media (max-width: 960px) {*/
+    /*body {*/
+        /*background: royalblue;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 500px) {*/
+    /*body {*/
+        /*background: darkred;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 501px) and (max-width: 700px) {*/
+    /*body {*/
+        /*background: seagreen;*/
+    /*}*/
+
+    /*p {*/
+        /*color: white;*/
+    /*}*/
+
+/*}*/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

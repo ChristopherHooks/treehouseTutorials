@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Development Fundamentals</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Don't forget @import stylesheets -->
+</head>
+<body>
+<script src="js/studentObjectsLesson.js"></script>
+<script src="js/studentObjectsChallenge.js"></script>
+
+
+    <!-- Start wrapper div -->
+    <div>
+        <!-- Start header tag -->
+        <header id="top" class="main-header">
+            <h1>Web Development</h1>
+            <!--Figures group images and captions-->
+            <figure>
+                <img src="img/me.jpg" height="200px" width="200px" alt="Photo of Chris Hooks" class="profile-image">
+                <!--<figcaption>-->
+                    <!--Christopher Hooks looking dapper-->
+                <!--</figcaption>-->
+            </figure>
+            <!-- em tag uses emphasis (italics)-->
+            <p><span class="title"><em>A World of Possibilities</em></span></p>
+            <!-- pre formatted text w/ special symbols-->
+            <!--<pre>-->
+              <!--&lt;div&gt;-->
+                <!--This is a div...-->
+                <!--&lt;p&gt;This paragraph is nested&lt;/p&gt;-->
+              <!--&lt;/div&gt;-->
+            <!--</pre>-->
+            <!-- navigation section -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#Articles">Articles</a> </li>
+                    <li><a href="#Contact">Contact</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <!--End header tag-->
+
+        <div class="secondary-content t-border">
+            <p>The internet is the world's last frontier. It provides us with the knowledge of
+            the entire globe at the touch of a button, and holds infinite possibilities at our fingertips
+            </p>
+
+            <p>For my entire life I've been surrounded by the wonders of technology. It has been my life's
+            dream to be a part of that, and now I am shaping the web as we know it.</p>
+            <a href="http://www.google.com">Just try it!</a>
+        </div>
+
+        <!-- Begin main section -->
+        <main>
+            <section class="about" id="about">
+                <h2>About This Site</h2>
+                    <!-- Spans are used to pull lines of text for formatting -->
+                <p>This is a site I developed while going through the Team Treehouse "Front End Web Development" course.<br>
+                    I am using it as a place to hold all of the methods I have learned throughout the course for future review.<br>
+                    It is my hope that it wil be of assistance to me in future projects.
+                </p>
+            </section>
+
+            <!-- Sections group like elements -->
+            <section id="Articles" class="group">
+                <h2>Latest Web Development Blog Posts</h2>
+
+                <article class="single-article a">
+                    <header>
+                        <h3>Why Learning the Fundamentals of HTML and CSS is important</h3>
+                        <p>By Chris Hooks</p>
+                    </header>
+                    <p>HTMl and CSS are the backbone of the internet. They make up every single site we visit today.
+                    Html provides us with the structure of the internet. It makes up what is known as the "content"
+                    layer for each and every one of your favorite sites.</p>
+                    <p>Alongside HTML, CSS provides us with the "presentation" layer of the internet. It takes plain
+                    boring text, and turns it into the beautiful websites we know and love. It has incredible styling
+                    capabilities, without which the internet would be a very boring place, indeed. </p>
+                    <a class="" href="https://www.w3.org/standards/webdesign/htmlcss">Read More</a>
+                    <!-- Footers can be used multiple times -->
+                    <footer>
+                        Published November 30, 2017
+                    </footer>
+                </article>
+
+                <article class="single-article b">
+                    <header>
+                        <h3>How JavaScript Makes Your Site Fun!</h3>
+                        <p>By Chris Hooks</p>
+                    </header>
+                    <p>JavaScript adds interactivity and animation to our web pages. It breathes life into what otherwise
+                    would be a glorified magazine ad. It is one of the most important languages in front end web development.
+                    There are a plethora of resources online for learning JavaScript, and the best part is it's easy and fun!</p>
+                    <a href="https://www.javascript.com/">Read More</a>
+                    <footer>
+                        Published November 30, 2017
+                    </footer>
+                </article>
+            </section>
+
+            <!-- Asides are loosely related to main -->
+            <aside>
+                <h3>Try Your Hand at Web Development</h3>
+                <ol>
+                    <li><a href="https://www.codecademy.com/learn/learn-html">Learn to Use HTML</a> </li>
+                    <li><a href="https://www.codecademy.com/learn/learn-css">Learn to Use CSS</a> </li>
+                    <li><a href="https://www.codecademy.com/learn/learn-javascript">Learn to Use JavaScript</a> </li>
+                    <li><a href="https://www.codecademy.com/en/tracks/php">Learn to Use PHP</a> </li>
+                </ol>
+                <hr>
+                <!-- Block quotes w/ inline and footer citations -->
+                <!--<blockquote cite="https://www.facebook.com/zuck/posts/10101319050523971">-->
+                    <!--"Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones. The future is coming." - Mark Zuckerberg-->
+                <!--</blockquote>-->
+
+                <blockquote>
+                    "The Internet is the first thing that humanity has built that humanity doesn't understand, the largest experiment
+                    in anarchy that we have ever had.
+                    <footer>
+                    - <cite><a href="https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr02/2013/5/14/12/enhanced-buzz-600-1368548117-7.jpg?downsize=715:*&output-format=auto&output-quality=auto">Eric Shmidt</a> </cite>
+                    </footer>
+                </blockquote>
+
+            </aside>
+
+            <section id="Contact">
+                <h2>Contact</h2>
+                <p><strong>Email:</strong> us at <a href="mailto:christopher.hooks89@gmail.com?subject=In%20Regards%20to%20Your%20Site">christopher.hooks89@gmail.com</a></p>
+                <p><strong>Phone:</strong> (405) 437-2230</p>
+                <p><strong>Address:</strong></p>
+                <address>
+                    Christopher Hooks<br>
+                    4857 N Blackwelder Ave<br>
+                    Oklahoma City, OK<br>
+                </address>
+            </section>
+        </main>
+        <!-- End main section-->
+
+        <footer id="main-footer" class="t-border">
+            <p><small>&copy2017 Christopher Hooks, Wanderlust Development.</small></p>
+            <a href="#top">Back to top</a>
+        </footer>
+    </div> <!-- End wrapper div -->
+</body>
+</html>
